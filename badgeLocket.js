@@ -8,11 +8,11 @@ const options = {
         "Content-Type": "application/json",
         "User-Agent": request.headers["user-agent"]
     },
-    body: JSON.stringify({
-  "data": {
-    "badge": "locket_gold"
-  }
-})
+    body: {
+        "data": {
+            "badge": "locket_gold"
+        }
+    }
 };
 
 $httpClient.post(options, function(error, response, data) {
